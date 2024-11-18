@@ -5,7 +5,7 @@ Create new environment for your model
 ` conda create --name DETR `
 Activate new environment
 ` conda activate DETER `
-# Stting up 
+# Setting up 
 To download a model from ultralatytics. 1) activate an environmet 2)write python 3) copy the command from the ultralytics to load model
 `
 (base) faryal@faryal-pc:~/Downloads/RT-DETR$ conda activate yolov10
