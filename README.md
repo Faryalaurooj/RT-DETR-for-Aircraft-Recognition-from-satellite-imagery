@@ -1,17 +1,17 @@
 # RT-DETR-for-Aircraft-Recognition-from-satellite-imagery
+
 Real-Time Detection Transformer (RT-DETR) will be used for Aircraft Recognition task by using my own custom dataset of satellite imagery 
 
 ![image](https://github.com/user-attachments/assets/73b3396a-44c7-4429-b921-9bba9faae597)
 
+The RT-DETR model architecture diagram shows the last three stages of the backbone {S3, S4, S5} as the input to the encoder. The efficient hybrid encoder transforms multiscale features into a sequence of image features through intrascale feature interaction (AIFI) and cross-scale feature-fusion module (CCFM). The IoU-aware query selection is employed to select a fixed number of image features to serve as initial object queries for the decoder. Finally, the decoder with auxiliary prediction heads iteratively optimizes object queries to generate boxes and confidence scores. 
 
 
 
-Create new environment for your model
-` conda create --name DETR `
-Activate new environment
-` conda activate DETER `
+
+`
 # Setting up 
-To download a model from ultralatytics. 1) activate an environmet 2)write python 3) copy the command from the ultralytics to load model
+To download a model from ultralatytics. 1) activate an environmet 2) write python 3) copy the command from the ultralytics to load model
 `
 (base) faryal@faryal-pc:~/Downloads/RT-DETR$ conda activate yolov10
 (yolov10) faryal@faryal-pc:~/Downloads/RT-DETR$ python 
@@ -20,6 +20,12 @@ Python 3.9.19 (main, May  6 2024, 19:43:03)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from ultralytics import RTDETR
 >>> model = RTDETR("rtdetr-l.pt")`
+or if you donot have an environment
+>>> Create new environment for your model
+` conda create --name DETR `
+>>> pip install requirements
+>>> Activate new environment
+` conda activate DETER `
 
 # Load a COCO-pretrained RT-DETR-l model and train it on the COCO8 example dataset for 100 epochs
 yolo train model=rtdetr-l.pt data=coco8.yaml epochs=100 imgsz=640
