@@ -1,6 +1,11 @@
 # RT-DETR-for-Aircraft-Recognition-from-satellite-imagery
 Real-Time Detection Transformer (RT-DETR) will be used for Aircraft Recognition task by using my own custom dataset of satellite imagery 
 
+![image](https://github.com/user-attachments/assets/73b3396a-44c7-4429-b921-9bba9faae597)
+
+
+
+
 Create new environment for your model
 ` conda create --name DETR `
 Activate new environment
