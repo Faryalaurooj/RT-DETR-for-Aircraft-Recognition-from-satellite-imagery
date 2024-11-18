@@ -13,15 +13,13 @@ The RT-DETR model architecture diagram shows the last three stages of the backbo
 # Setting up 
 To download a model from ultralatytics. 1) activate an environmet 2) write python 3) copy the command from the ultralytics to load model
 `
-(base) faryal@faryal-pc:~/Downloads/RT-DETR$ conda activate yolov10
-(yolov10) faryal@faryal-pc:~/Downloads/RT-DETR$ python 
-Python 3.9.19 (main, May  6 2024, 19:43:03) 
-[GCC 11.2.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
+conda activate yolov10
+python 
 >>> from ultralytics import RTDETR
 >>> model = RTDETR("rtdetr-l.pt")`
 or if you donot have an environment
->>> Create new environment for your model
+
+Create new environment for your model
 ` conda create --name DETR `
 >>> pip install requirements
 >>> Activate new environment
